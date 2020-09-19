@@ -16,13 +16,12 @@ var querystring = require('querystring');
 
 
 function App() {
-  const [name, setProp, playbook, clearance, supervisor, taskforce, species] = useState('');
-  // var name =  '';
-  // var playbook= '';
-  // var clearance= '';
-  // var supervisor= '';
-  // var taskforce= '';
-  // var species= '';
+  const [name, setName] = useState('');
+  const [playbook, setPlaybook] = useState('');
+  const [clearance, setClearance] = useState('');
+  const [supervisor, setSupervisor] = useState('');
+  const [taskforcea, setTaskForce = useState('');
+  const [species, setSpecies] = useState('');
   var modalIsOpen = false;
   var messageFromServer = "";
   
@@ -108,17 +107,17 @@ function App() {
 
             <fieldset>
               <label htmlFor='name'>Name:</label>
-              <input type='text' id='name' value={name} onChange={e => setProp(e.target.value)} /*(onChange={handleTextChange()}*/></input>
+              <input type='text' id='name' value={name} onChange={e => setName(e.target.value)} /*(onChange={handleTextChange()}*/></input>
               <label htmlFor='playbook'>playbook:</label>
-              <input type='text' id='playbook' value={playbook} onChange={e => setProp(e.target.value)} /*(onChange={handleTextChange()}*/></input>
+              <input type='text' id='playbook' value={playbook} onChange={e => setPlaybook(e.target.value)} /*(onChange={handleTextChange()}*/></input>
               <label htmlFor='clearance'>Clearance:</label>
-              <input type='text' id='clearance' value={clearance} onChange={e => setProp(e.target.value)} /*(onChange={handleTextChange()}*/></input>
+              <input type='text' id='clearance' value={clearance} onChange={e => setClearance(e.target.value)} /*(onChange={handleTextChange()}*/></input>
               <label htmlFor='supervisor'>Supervisor:</label>
-              <input type='text' id='supervisor' value={supervisor} onChange={e => setProp(e.target.value)} /*(onChange={handleTextChange()}*/></input>
+              <input type='text' id='supervisor' value={supervisor} onChange={e => setSupervisor(e.target.value)} /*(onChange={handleTextChange()}*/></input>
               <label htmlFor='taskforce'>Task Force:</label>
-              <input type='text' id='taskforce' value={taskforce} onChange={e => setProp(e.target.value)} /*(onChange={handleTextChange()}*/></input>
+              <input type='text' id='taskforce' value={taskforce} onChange={e => setTaskForce(e.target.value)} /*(onChange={handleTextChange()}*/></input>
               <label htmlFor='species'>Species:</label>
-              <input type='text' id='species' value={species} onChange={e => setProp(e.target.value)}  /*(nChange={handleTextChange()}*/></input>
+              <input type='text' id='species' value={species} onChange={e => setSpecies(e.target.value)}  /*(nChange={handleTextChange()}*/></input>
             </fieldset>
             <button onClick={myOnClick()}>Add New Agent</button>
           </Modal>
@@ -162,7 +161,7 @@ function App() {
             <SCPs />
           </Route>
           <Route path="/Agents">
-            <Agents agents={[{name: "Axel Rose", path: "/AgentRose"}, {name: "Peter", path: "/AgentPeter"}]} />
+            <Agents />
           </Route>
           <Route path="/">
             { Add() }
