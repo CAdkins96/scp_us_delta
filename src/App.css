@@ -22,17 +22,17 @@ header {
   text-align: center;
 }
 
-.navBar a {
+a {
   text-decoration: none !important;
   color: darkslategray !important;
   margin-left: 20px !important;
   cursor: pointer;
 }
 
-.navBar a:hover {
+a:hover {
   color: black !important;
 }
 
-.activeLink {
-  color: black;
+.subNav a {
+  display: inline;
 }
