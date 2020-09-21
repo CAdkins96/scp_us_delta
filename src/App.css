@@ -36,3 +36,14 @@ a:hover {
 .subNav a {
   display: inline;
 }
+
+/* styling for data on pages */
+
+.agentNav {
+  display: inline-block;
+}
+
+.agentData {
+  display: inline-block;
+  text-align: center;
+}

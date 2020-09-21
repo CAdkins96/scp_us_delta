@@ -3,11 +3,12 @@ import React from 'react';
 function Agent(props) {
     return(
         <div>
-            <text>Name: {props.name}</text>
-            <text>Task Force: {props.tf}</text>
-            <text>Supervisor: {props.sup}</text>
-            <text>playbook: {props.class}</text>
-            <text>Clearance: {props.clear}</text>
+            <text className="dataText" >Name: {props.name}</text><br/>
+            <text className="dataText" >Task Force: {props.taskforce}</text><br/>
+            <text className="dataText" >Supervisor: {props.supervisor}</text><br/>
+            <text className="dataText" >playbook: {props.classification}</text><br/>
+            <text className="dataText" >Clearance: {props.clearance}</text><br/>
+            <text className="dataText" >Species: {props.species}</text><br/>
         </div>
     );
 }
