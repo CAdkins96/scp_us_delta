@@ -11,15 +11,18 @@ function Agents(props) {
     var arr = props.agents;
 
     return(
-        <div className="agentContainer">
-            <Router className="agentNav">
-                <ol>
-                    { arr.map(i => <NavLink to={i.path} key={i.id}>{i.name}</NavLink>) }
+        <div>
+            <Router>
+                <ol className="dataNav">
+                    { arr.map(i => <NavLink activeClassName="activeNav" to={i.path} key={i.id}>{i.fullName}</NavLink>)}
+                </ol>
+                <ol className="dataNavMobile">
+                    { arr.map(i => <NavLink activeClassName="activeNav" to={i.path} key={i.id}>{i.abvName}</NavLink>)}
                 </ol>
                 
-                <Switch className="agentData">
+                <Switch>
                     {arr.map( i =>
-                        <Route path={i.path} >
+                        <Route path={i.path} key={i.id}>
                             <Agent 
                                 name={i.name} 
                                 taskforce={i.taskforce} 

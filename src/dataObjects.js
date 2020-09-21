@@ -3,7 +3,8 @@ import React from 'react';
     let agents = [
         {
             id: '033',
-            name: 'Axel Rose',
+            fullName: 'Axel Rose',
+            abvName: 'Axel',
             supervisor: 'Agent Leeds',
             classification: 'Wronged',
             clearance: 'Cryptid',
@@ -13,7 +14,8 @@ import React from 'react';
         },
         {
             id: '034',
-            name: 'Peter',
+            fullName: 'Peter',
+            abvName: 'Peter',
             supervisor: 'Agent Leeds',
             classification: 'Mundane',
             clearance: 'Cryptid',
@@ -23,7 +25,8 @@ import React from 'react';
         },
         {
             id: '035',
-            name: 'Alexander',
+            fullName: 'Alexander',
+            abvName: 'Alex',
             supervisor: 'Agent Leeds',
             classification: 'Expert',
             clearance: 'Cryptid',
@@ -33,7 +36,8 @@ import React from 'react';
         },
         {
             id: '036',
-            name: 'Eugene Fletcher',
+            fullName: 'Eugene Fletcher',
+            abvName: 'Eugene',
             supervisor: 'Agent Leeds',
             classification: 'Flake',
             clearance: 'Cryptid',
@@ -43,7 +47,8 @@ import React from 'react';
         },
         {
             id: '001',
-            name: 'Agent Leeds',
+            fullName: 'Agent Leeds',
+            abvName: 'Leeds',
             supervisor: 'REDACTED',
             classification: 'REDACTED',
             clearance: 'REDACTED',

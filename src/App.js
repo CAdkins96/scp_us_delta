@@ -14,7 +14,8 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Secure Contain Protect</h1>
+          <h1 className="heading">Secure Contain Protect</h1>
+          <h3 className="headingMobile">Secure Contain Protect</h3>
           <h6>US - DELTA </h6>
         </header>
         <div className="navBar">

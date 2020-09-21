@@ -18,8 +18,16 @@ header {
     text-align: center;
 }
 
+.headingMobile {
+  display: none;
+}
+
 .navBar {
   text-align: center;
+}
+
+.activeNav {
+  color: black;
 }
 
 a {
@@ -27,6 +35,10 @@ a {
   color: darkslategray !important;
   margin-left: 20px !important;
   cursor: pointer;
+}
+* {
+  width: auto;
+  text-align: center;
 }
 
 a:hover {
@@ -39,11 +51,22 @@ a:hover {
 
 /* styling for data on pages */
 
-.agentNav {
-  display: inline-block;
+
+
+.dataText {
+  text-align: left;
+  margin-left: 1em;
 }
 
-.agentData {
-  display: inline-block;
+.dataNavMobile {
+  width: auto;
   text-align: center;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .dataNav {display: none;}
+  .dataNavMobile {display: inline-block;}
+  .heading {display: none;}
+  .headingMobile {display: inline-block;}
 }
