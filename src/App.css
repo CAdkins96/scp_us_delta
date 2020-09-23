@@ -12,7 +12,7 @@
 
 .Base {
   background-color: white;
-  background-image: url(./images/SCP.jpeg);
+  background-image: url(./images/SCP.png);
   background-position: center;
   background-repeat: no-repeat;
   opacity: .75;
@@ -114,4 +114,7 @@ a:hover {
   .dataNavMobile {display: inline-block;}
   .heading {display: none;}
   .headingMobile {display: inline-block;}
+  a {
+    size: .5rem;
+  }
 }
