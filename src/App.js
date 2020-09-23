@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,20 +7,26 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Agents from './components/agents';
-import agents from './dataObjects';
+import {agents, scpClasses} from './dataObjects';
+import SCPClasses from './components/scpClasses';
 
 function App() {
+  const [classNames, setClassNames] = useState('App Base');
+
+  function classChange(classes) {
+    setClassNames(classes);
+  }
   return (
     <Router>
-      <div className="App">
+      <div className={classNames}>
         <header>
           <h1 className="heading">Secure Contain Protect</h1>
           <h3 className="headingMobile">Secure Contain Protect</h3>
           <h6>US - DELTA </h6>
         </header>
         <div className="navBar">
-          <NavLink to="/Cryptids" activeClassName="activeLink">Cryptids</NavLink>
-          <NavLink to="/SCPs" activeClassName="activeLink">SCPs</NavLink>
+          <NavLink to="/Cryptids" activeClassName="activeLink" >Cryptids</NavLink>
+          <NavLink to="/SCPs" activeClassName="activeLink" >SCPs</NavLink>
           <NavLink to="/Agents" activeClassName="activeLink">Agents</NavLink>
         </div>
         <Switch className="subNav">
@@ -28,10 +34,10 @@ function App() {
             <Cryptids />
           </Route>
           <Route path="/SCPs">
-            <SCPs />
+            <SCPClasses classes={scpClasses} changeClass={classChange} />
           </Route>
           <Route path="/Agents">
-            <Agents agents={agents} />
+            <Agents agents={agents} changeClass={classChange} />
           </Route>
           <Route path="/">
           </Route>
@@ -43,10 +49,6 @@ function App() {
 
 function Cryptids() {
   return (<text>Cryptids</text>);
-}
-
-function SCPs() {
-  return (<text>SCPs</text>);
 }
 
 export default App;

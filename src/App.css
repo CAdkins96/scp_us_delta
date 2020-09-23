@@ -6,12 +6,52 @@
 .App {
   font-family: conspiracy;
   text-align: left;
-  background-color: white;
-  background-image: url(./images/center_logo.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+}
+
+.Base {
+  background-color: white;
+  background-image: url(./images/SCP.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .75;
+}
+
+.Safe {
+  background-color: white;
+  background-image: url(./images/Safe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Euclid {
+  background-color: white;
+  background-image: url(./images/Euclid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Keter {
+  background-color: white;
+  background-image: url(./images/Keter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.Thaumiel {
+  background-color: white;
+  background-image: url(./images/Thaumiel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Apollyon {
+  background-color: white;
+  background-image: url(./images/Apollyon.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -56,6 +96,11 @@ a:hover {
   text-align: left;
   margin-left: 1em;
 
+}
+
+.actieLink {
+  text-decoration: underline !important;
+  text-decoration-color: black !important;
 }
 
 .dataNavMobile {
