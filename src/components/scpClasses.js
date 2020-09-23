@@ -10,6 +10,9 @@ import {
 
  function SCPClasses(props) {
     let arr = props.classes;
+    let newClass = 'App ' + props.class;
+     
+    props.changeClass(newClass)
 
      return(
         <div>
