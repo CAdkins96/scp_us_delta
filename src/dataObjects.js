@@ -25,7 +25,7 @@ import React from 'react';
         },
         {
             id: '035',
-            fullName: 'Alexander',
+            fullName: 'Alexander Grant',
             abvName: 'Alex',
             supervisor: 'Agent Leeds',
             classification: 'Expert',
