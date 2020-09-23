@@ -47,6 +47,7 @@ a:hover {
 
 .subNav a {
   display: inline;
+
 }
 
 /* styling for data on pages */
@@ -56,6 +57,7 @@ a:hover {
 .dataText {
   text-align: left;
   margin-left: 1em;
+
 }
 
 .dataNavMobile {
