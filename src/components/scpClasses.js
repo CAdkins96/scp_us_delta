@@ -19,7 +19,7 @@ import {
             <Router basename='/SCPs'>
                 <ol >
                     { arr.map(i => 
-                        <NavLink to={i.path} key={i.id} >{i.class}</NavLink>
+                        <NavLink to={i.path} key={i.id} className={i.navPlacement}>{i.class}</NavLink>
                     )}
                 </ol>
                 

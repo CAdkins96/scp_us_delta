@@ -17,10 +17,10 @@ function Agents(props) {
         <div>
             <Router basename='/Agents'>
                 <ol className="dataNav">
-                    { arr.map(i => <NavLink to={i.path} key={i.id}>{i.fullName}</NavLink>)}
+                    { arr.map(i => <NavLink to={i.path} key={i.id} className={i.navPlacement}>{i.fullName}</NavLink>)}
                 </ol>
                 <ol className="dataNavMobile">
-                    { arr.map(i => <NavLink to={i.path} key={i.id}>{i.abvName}</NavLink>)}
+                    { arr.map(i => <NavLink to={i.path} key={i.id} className={i.navPlacement}>{i.abvName}</NavLink>)}
                 </ol>
                 <Switch>
                     {arr.map( i =>

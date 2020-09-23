@@ -8,7 +8,8 @@ export const agents = [
         clearance: 'REDACTED',
         species: 'REDACTED',
         taskforce: 'Cryptid Rogue',
-        path: '/AgentLeeds'
+        path: '/AgentLeeds',
+        navPlacement: 'notLast'
     },
     {
         id: '033',
@@ -19,7 +20,8 @@ export const agents = [
         clearance: 'Cryptid',
         species: 'Human',
         taskforce: 'Cryptid Rogue',
-        path: '/AgentAlexander'
+        path: '/AgentAlexander',
+        navPlacement: 'notLast'
     },
     {
         id: '034',
@@ -30,7 +32,8 @@ export const agents = [
         clearance: 'Cryptid',
         species: 'Human',
         taskforce: 'Cryptid Rogue',
-        path: '/AgentRose'
+        path: '/AgentRose',
+        navPlacement: 'notLast'
     },
     {
         id: '035',
@@ -41,7 +44,8 @@ export const agents = [
         clearance: 'Cryptid',
         species: 'Human',
         taskforce: 'Cryptid Rogue',
-        path: '/AgentFletcher'
+        path: '/AgentFletcher',
+        navPlacement: 'notLast'
     },
     {
         id: '036',
@@ -52,7 +56,8 @@ export const agents = [
         clearance: 'Cryptid',
         species: 'Human',
         taskforce: 'Cryptid Rogue',
-        path: '/AgentPeter'
+        path: '/AgentPeter',
+        navPlacement: 'last'
     }
 ];
 
@@ -105,30 +110,35 @@ export const scpClasses = [
         id: '0',
         class: 'Safe',
         path: '/Safe',
-        newClass: 'App Safe'
+        newClass: 'App Safe',
+        navPlacement: 'notLast'
     }, 
     {
         id: '1',
         class: 'Euclid',
         path: '/Euclid',
-        newClass: 'App Euclid'
+        newClass: 'App Euclid',
+        navPlacement: 'notLast'
     },
     {
         id: '2',
         class: 'Keter',
         path: '/Keter',
-        newClass: 'App Keter'
+        newClass: 'App Keter',
+        navPlacement: 'notLast'
     },
     {
         id: '3',
         class: 'Thaumiel',
         path: '/Thaumiel',
-        newClass: 'App Thaumiel'
+        newClass: 'App Thaumiel',
+        navPlacement: 'notLast'
     },
     {
         id: '4',
         class: 'Apollyon',
         path: '/Apollyon',
-        newClass: 'App Apollyon'
+        newClass: 'App Apollyon',
+        navPlacement: 'last'
     }
 ]
