@@ -33,7 +33,7 @@ header {
 a {
   text-decoration: none !important;
   color: darkslategray !important;
-  margin-left: 20px !important;
+  margin-right: 20px !important;
   cursor: pointer;
 }
 * {
@@ -51,8 +51,6 @@ a:hover {
 }
 
 /* styling for data on pages */
-
-
 
 .dataText {
   text-align: left;

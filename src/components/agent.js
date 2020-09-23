@@ -3,7 +3,7 @@ import React from 'react';
 function Agent(props) {
     return(
         <div className="dataText">
-            <text className="data" >Name: {props.name}</text><br/><br/>
+            <text className="firstAgent" >Name: {props.name}</text><br/><br/>
             <text className="data" >Task Force: {props.taskforce}</text><br/><br/>
             <text className="data" >Supervisor: {props.supervisor}</text><br/><br/>
             <text className="data" >Position: {props.classification}</text><br/><br/>
