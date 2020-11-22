@@ -12,6 +12,7 @@ import SCPClasses from './components/scpClasses';
 
 function App() {
   const [classNames, setClassNames] = useState('App Base');
+  const [access, setAccess] = useState('Granted');
 
   function classChange(classes) {
     setClassNames(classes);
@@ -34,7 +35,7 @@ function App() {
             <Cryptids />
           </Route>
           <Route path="/SCPs">
-            <SCPClasses classes={scpClasses} changeClass={classChange} />
+            <SCPClasses classes={scpClasses} changeClass={classChange} access={access} />
           </Route>
           <Route path="/Agents">
             <Agents agents={agents} changeClass={classChange} />

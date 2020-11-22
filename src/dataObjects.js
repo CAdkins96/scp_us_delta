@@ -67,6 +67,7 @@ export const cryptids = [
         powers: [],
         abilities: [],
         weaknesses: [],
+        type: 'Cryptid'
     }
 ];
 
@@ -76,7 +77,8 @@ export const scps = [
         idNum: '001',
         name: '3',
         class: 'Safe',
-        path: '/001'
+        path: '/001',
+        type: 'SCP'
 
     },
     {
@@ -84,7 +86,8 @@ export const scps = [
         idNum: '002',
         name: '3',
         class: 'Safe',
-        path: '/002'
+        path: '/002',
+        type: 'SCP'
 
     },
     {
@@ -92,7 +95,8 @@ export const scps = [
         idNum: '003',
         name: '3',
         class: 'Keter',
-        path: '/003'
+        path: '/003',
+        type: 'SCP'
 
     },
     {
@@ -100,7 +104,8 @@ export const scps = [
         idNum: '004',
         name: '3',
         class: 'Euclid',
-        path: '/004'
+        path: '/004',
+        type: 'SCP'
 
     },
 ];

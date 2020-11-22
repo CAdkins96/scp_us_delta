@@ -97,13 +97,14 @@ ol {
 
 .dataText {
   text-align: left;
-  margin-left: 1em;
+  margin-left: 3.5em;
 
 }
 
-.actieLink {
+.activeLink {
   text-decoration: underline !important;
   text-decoration-color: black !important;
+  color: black !important;
 }
 
 .dataNavMobile {
@@ -112,12 +113,31 @@ ol {
   display: none;
 }
 
+.dataNav {
+  margin-bottom: 30px;
+}
+
+.denied h1{
+  color: red;
+}
+
+.navBar {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1000px) {
   .dataNav {display: none;}
+  .dataText {margin-top: 1.5em;}
   .dataNavMobile {display: inline-block;}
+  .navBar {
+    margin-bottom: 10px !important;
+  }
   .heading {display: none;}
   .headingMobile {display: inline-block;}
-  a {
-    size: .5rem;
+  .App {
+    font-size: .90rem !important;
+  }
+  .mobileNav {
+    font-size: .85rem !important;
   }
 }
